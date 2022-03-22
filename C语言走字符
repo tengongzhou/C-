@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() 
+{
+	printf("请输入一行字符:\n");
+	char s[10000];
+	gets(s);
+
+	printf("请输入一行单词:\n");
+	char w[10];
+	gets(w);
+
+	strlwr(s);
+	strlwr(w);
+
+	int slen = strlen(s);
+	int wlen = strlen(w);
+
+	int count = 0;
+
+	for (int i = 0; i <= slen - wlen; i++) 
+	{
+		char a[wlen + 1];
+		a[wlen] = '\0';
+		for (int j = 0; j < wlen; j++)
+			a[j] = s[i + j];
+		if (strcmp(a, w) == 0)
+			count++;
+
+	}
+	printf("%d", count);
+
+	return 0;
+
+
+}
