@@ -113,7 +113,7 @@ int main()
 {
 	
 	int number;
-	printf("Welcome to Easy Student Management System ^_^\n");
+	printf("欢迎来到简易学生登记系统\n");
 
     printf("*******输入 1, 如果你要添加新的学生记录*****\n");
 	printf("*******输入 2, 如果你想要找到学生记录*******\n");
